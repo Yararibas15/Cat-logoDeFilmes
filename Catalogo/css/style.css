@@ -1,0 +1,17 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.card-filme {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card-filme:hover {
+    transform: sacale(1.0);
+}
+
+.card-filme img {
+    height: 400px;
+    object-fit:cover 
+}
