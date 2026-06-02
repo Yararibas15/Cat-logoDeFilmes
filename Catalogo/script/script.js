@@ -30,3 +30,25 @@ const filmes = [
           descrição: "Drama",
      },
     ]
+
+    const listaFilmes = document.getElementById ("listarFilmes")
+function mostrarFilmes(lista) {
+    listaFilmes.innerHTML = ""
+    lista.forEach(filme => {
+        listaFilmes.innerHTML += `
+            <div class="col-md-4">
+            <div class="caed card-filme h-100">
+              <img scr="${filme.imagem}" class="card-img-top">
+              <div class="card-body">
+              <h3>${filme.titulo}</h3>
+              <p>${filme.descricao}</p>
+              <button class="btn btn-dark" onclick="verDetalhes('${filme.titulo}')">Ver detalhes"</button>
+              </div>
+              </div>
+              </div>
+              
+        `
+
+        
+    });
+}
