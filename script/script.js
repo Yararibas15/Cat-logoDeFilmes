@@ -30,7 +30,6 @@ const filmes = [
           descrição: "Drama",
      },
     ]
-
    const listaFilmes = document.getElementById("listaFilmes");
 function mostrarFilmes(lista) {
     listaFilmes.innerHTML = ""
